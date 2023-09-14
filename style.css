@@ -1,0 +1,496 @@
+/* body styling start */
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    margin-left: -5px;
+    position: relative;
+    
+}
+
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color:#212529
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	
+    background: #555;
+}
+
+/* body styling end */
+/* top navigation bar styling start */
+.nav-cont{
+    box-shadow: 0px 0px 6px 2px rgba(115,115,115,0.84);
+    height: 40px;
+}
+.top-cont{
+    width: 100vw;
+}
+
+.fdfd{
+    font-size:20px;
+}
+
+/* top navigation bar styling end */
+
+/* top search bar styling start */
+.s-input{
+    width: 40vw;
+    height: 8vh;
+    outline: none;
+    border-radius: 30px 0px 0px 30px;
+    padding-left: 20px;
+}
+.tofy{
+    margin-top: -20px;
+}
+
+.tohrt{
+    margin-top: -10px;
+}
+.sr-btn{
+    height: 8vh;
+    width: 3vw;
+    margin-left:0px;
+    border-radius: 0px 30px 30px 0px;
+    
+    
+}
+
+ .s-btn-cont{
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 10px;
+ }
+
+ #tp-hem-icomn {
+    font-size: 35px; 
+  }
+
+
+/* top search bar styling end */
+
+/* food item card styling start */
+.crd {
+   overflow: hidden;
+   margin: 10px;
+   height: 550px;
+   box-shadow: 0px 0px 8px 2px rgba(115,115,115,0.84);
+  }
+.crd img{
+  width: 300px;
+  height: 300px;
+}
+
+
+.card-screen{
+    width: 99vw;
+    
+    background-color: white;
+    margin-left: 5px; 
+    padding: 10px;
+    
+    height: 95vh;
+    z-index: 100;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+   
+}
+
+/* food item card styling end */
+
+/* fav food item styling start */
+.km-img{
+   width: 400px;
+   height: 400px;
+   border: 2px solid white;
+   border-radius: 6px;
+  
+}  
+
+.topfav{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: black;
+    margin-top: -10px;
+}
+/* fav food item styling end */
+
+/* see more button page styling start */
+#disponclck{
+    position:fixed;
+    top:5.5% ;
+    
+}
+
+.card-screen{
+    width: 99.5vw; 
+    height:100vh;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.card-text{
+    height: 90px;
+    overflow: hidden;
+}
+
+.card-screen::-webkit-scrollbar
+{
+	width: 12px;
+	background-color:#212529
+}
+
+.card-screen::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	
+    background: #555;
+}
+
+/* see more button page styling end */
+
+/* fav page styling start */
+.fav-cont{
+    width: 99vw;
+    
+    background-color: white;
+    margin-left: 5px; 
+    padding: 10px;
+   
+    height: 95vh;
+    z-index: 100;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+#fav-cont{
+    position:fixed;
+    top:5.5%;
+    visibility: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+
+
+.fav-cont::-webkit-scrollbar
+{
+	width: 12px;
+	background-color:#212529
+}
+
+.fav-cont::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	
+    background: #555;
+}
+
+
+
+#fav-modal{
+   width: 80vw;
+   height: 80vh;
+}
+.modal {
+    margin-top: 100px;
+    margin-left:10%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 2px rgba(115,115,115,0.84);
+    overflow: hidden;
+   
+}
+.modal-content{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.card-screen-fav{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    
+}
+
+.card-screen-fav::-webkit-scrollbar
+{
+	width: 12px;
+	background-color:#212529
+}
+
+.card-screen-fav::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	
+    background: #555;
+}
+
+.km-img-fav{
+    width: 190px;
+    height: 250px;
+    border: 2px solid white;
+    border-radius: 6px;
+    margin-left: 20px;
+    
+}
+
+/* fav page styling end */
+
+/* media queries for the  diffrent devies start */
+
+  @media screen and (min-width: 1000px) and (max-width: 2500px) {
+  
+    .card-screen {
+        width: 100vw; 
+        height: 100vh;
+    }
+    .sr-btn {
+        height: 3vh;
+        width: 3vw;
+        margin-left: 0px;
+        border-radius: 0px 30px 30px 0px;
+    }
+    .s-input {
+        font-size: 1.5rem; 
+    }
+}
+
+
+@media screen and (max-width:2200px) {
+
+     .card-screen{
+        width: 100vw; 
+        height:100vh;
+    }
+
+}
+
+
+
+@media screen and (max-width:1000px) {
+    
+   .sr-btn{
+        padding-right: 30px;
+        
+   }
+   .tohrt{
+    margin-right: 10px;
+  }
+  #fav-cont{
+    top:4%;
+    height: 100vh;
+   
+ }
+#disponclck{
+   
+     top:4%;
+    
+ }
+ .card-screen{
+    width: 99vw; 
+    height:100vh;
+}
+
+
+.s-input {
+    font-size: 1.5rem; 
+   
+  }
+  .s-input{
+    width: 40vw;
+    height: 4vh;
+   
+}
+
+.sr-btn{
+    height: 4vh;
+    width: 3vw;   
+}
+
+}
+
+@media screen and (max-width:650px) {
+    .nav-cont{
+        width: 105vw;
+        
+      }
+    #fav-cont{
+        top:3%;
+        height: 110vh;
+        width: 100%;
+     }
+    #disponclck{
+       
+         top:2%;
+        
+     }
+
+    .sr-btn{
+         padding-right: 30px;
+    }
+
+    .explorewf{
+        visibility: hidden;
+    }
+    .tofy{
+        font-size:10px;
+    }
+
+    .fdfd{
+        font-size:10px;
+        padding: 10px;
+    }
+
+    .topfav{
+        width: 15px;
+        height: 15px;
+       
+    }
+    .tohrt{
+        width: 15px;
+        height: 15px;
+    }
+    #tp-hem-icomn {
+        font-size: 20px; 
+       
+      }
+
+      .nav-cont{
+        width: 100vw;
+        height: 35px;
+      }
+
+      .tohrt{
+        margin-bottom: 18px;
+        margin-right: 15px;
+      }
+      .topfav{
+        margin-bottom: 5px;
+      }
+
+      
+.crd {
+   
+    margin: 6px;
+    height: 450px;
+    box-shadow: 0px 0px 8px 2px rgba(115,115,115,0.84);
+   }
+ .crd img{
+   width: 300px;
+   height: 200px;
+ }
+ 
+ 
+ /* .card-screen{
+     width: 100vw; 
+     height:100vh;
+ } */
+
+ .km-img{
+    width: 190px;
+    height: 190px;
+    border: 2px solid white;
+    border-radius: 6px;
+   
+ }  
+
+ .card-screen h5{
+   font-size: 11px;
+ }
+ 
+ .card-screen h3{
+    font-size: 18px;
+  }
+  .ingpara{
+    font-size: 11px;
+  }
+
+  #fav-modal{
+    width: 80vw;
+    height: 90vh;
+ }
+ .modal {
+     margin-top: 60px;
+     margin-left:10%;
+     border-radius: 20px;
+     box-shadow: 0px 0px 8px 2px rgba(115,115,115,0.84);
+     overflow: hidden;
+    
+ }
+ 
+  .card-screen-fav img{
+  width: 170px;
+  height:170px
+  }
+  .card-screen-fav h3{
+    font-size: 15px;
+   }
+
+   .card-screen-fav h5{
+    font-size: 10px;
+   }
+   .card-screen-fav p{
+    font-size: 10px !important;
+   
+   }
+
+ }
+ 
+ @media screen and (max-width:460px) {
+
+
+    .nav-cont{
+        width: 110vw;
+        height: 80px;
+        text-align: center;
+      }
+
+     #fav-cont{
+        top:6%;
+        height: 100vh;
+       
+     }
+    #disponclck{
+       
+         top:6%;
+        
+     }
+     .card-screen{
+        width: 99vw; 
+        height:100vh;
+    }
+
+    .modal {
+        margin-top: 110px;
+        margin-left:10%;
+        border-radius: 20px;
+        box-shadow: 0px 0px 8px 2px rgba(115,115,115,0.84);
+        overflow: hidden;
+       
+    }
+
+    .card-screen-fav img{
+        width: 110px;
+        height:160px
+       }
+ }
+
+ /* media queries for the  diffrent devies end */
+ 
+
