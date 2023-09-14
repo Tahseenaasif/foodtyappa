@@ -15,11 +15,6 @@ let fav=[];
 let temp=[];
 let fevcount=0;
 
-// const div = document.querySelector('div');
-
-// document.addEventListener("click", (e) => {
-  
-// })
 
 
 // search button key handler event listener and function
