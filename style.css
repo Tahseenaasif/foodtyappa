@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 /* body styling start */
 body{
     padding: 0;
@@ -5,6 +8,16 @@ body{
     overflow-x: hidden;
     margin-left: -5px;
     position: relative;
+    /* background-image: url("6.jpg"); */
+    background-position: center;
+    background-size: contain;
+    width: 95vw;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: repeat;
+    /* backdrop-filter: blur(px); */
+
+    font-family: 'Rubik', sans-serif;
     
 }
 
@@ -26,15 +39,61 @@ body::-webkit-scrollbar-thumb
 /* top navigation bar styling start */
 .nav-cont{
     box-shadow: 0px 0px 6px 2px rgba(115,115,115,0.84);
-    height: 40px;
+    height: 55px;
+    width: 100.4vw;
 }
 .top-cont{
     width: 100vw;
 }
 
 .fdfd{
-    font-size:20px;
+    font-size:24px;
+    /* animation: mymove 2s infinite ease-in-out ;
+    transform-origin: center; */
+    font-family: 'Rubik', sans-serif;
+
 }
+
+.explorewf{
+    font-size: 24px;
+    font-family: 'Rubik', sans-serif;
+}
+.explorewf p{
+    font-size: 24px;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 9px; 
+}
+.logo {
+    padding-bottom: 5px;
+}
+.logo img{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+    /* width: 100px; /* Set your desired width */
+   /* height: 100px; */
+   animation: rot 4s infinite;
+   transform-origin: center;
+   display: flex; /* To center content horizontally and vertically */
+   justify-content: center; /* To center content horizontally */
+   align-items: center; /* To center content vertically */
+   background-color: #ccc; 
+   background-color: black;
+   box-shadow: 0px 0px 5px red;
+}
+
+@keyframes rot {
+    0% {
+       
+        transform:rotate(0deg)
+    }
+    
+    100% {
+        
+        transform:rotate(360deg)
+    }
+}
+
 
 /* top navigation bar styling end */
 
@@ -47,11 +106,55 @@ body::-webkit-scrollbar-thumb
     padding-left: 20px;
 }
 .tofy{
-    margin-top: -20px;
+    margin-top: -12px;
+    animation: mymove 2s infinite ease-in-out ;
+    transform-origin: center;
+    height: 55px;
+}
+.fdfd{
+    animation: col 4s infinite ease-in-out ;
+    transform-origin: center;
+} 
+
+.ff{
+padding-top: 4px;
 }
 
+@keyframes col {
+    0% {
+       
+        color: white;
+    }
+    25%{
+        color: violet;
+     }
+
+     50%{
+        color:blueviolet;
+     }
+     75%{
+        color:aquamarine;
+     }
+    100% {
+        
+        color: red;
+    }
+}
+
+@keyframes mymove {
+    0% {
+        transform: scale(1.0);
+        color: red;
+    }
+     
+    100% {
+        transform: scale(1.2);
+        color: red;
+    }
+}
 .tohrt{
     margin-top: -10px;
+    margin-right: 10px;
 }
 .sr-btn{
     height: 8vh;
@@ -99,6 +202,12 @@ body::-webkit-scrollbar-thumb
     z-index: 100;
     overflow-y: scroll;
     padding-bottom: 20px;
+
+    background-image: url("7.jpg");
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    background-repeat: repeat;
    
 }
 
@@ -128,6 +237,7 @@ body::-webkit-scrollbar-thumb
     top:5.5% ;
     
 }
+
 
 .card-screen{
     width: 99.5vw; 
@@ -181,6 +291,13 @@ body::-webkit-scrollbar-thumb
     visibility: hidden;
     padding-top: 30px;
     padding-bottom: 30px;
+    background-image: url("2.jpg");
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    background-repeat: repeat;
+    backdrop-filter: blur(5px);
+    
     
 }
 
@@ -323,6 +440,13 @@ body::-webkit-scrollbar-thumb
     width: 3vw;   
 }
 
+.logo img{
+    width: 20px;
+    height: 20px;
+
+}
+.logo {
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width:650px) {
@@ -347,6 +471,7 @@ body::-webkit-scrollbar-thumb
 
     .explorewf{
         visibility: hidden;
+        
     }
     .tofy{
         font-size:10px;
@@ -457,7 +582,7 @@ body::-webkit-scrollbar-thumb
 
     .nav-cont{
         width: 110vw;
-        height: 80px;
+        height: 95px;
         text-align: center;
       }
 
