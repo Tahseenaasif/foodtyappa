@@ -8,6 +8,11 @@ let hrt=document.getElementsByClassName('hrt');
 let favcntd=document.getElementById("fav-count");
 let favcont=document.getElementById("fav-cont");
 let tohmaff=document.getElementById("tp-hem-icomn");
+let body = document.querySelector('body');
+let randomImageNumber = Math.floor(Math.random() * 7); 
+body.style.backgroundImage = `url(${randomImageNumber}.jpg)`; 
+
+
 
 // arrays need to store food item data from api 
 let fooditems=[];
@@ -15,6 +20,11 @@ let fav=[];
 let temp=[];
 let fevcount=0;
 
+// const div = document.querySelector('div');
+
+// document.addEventListener("click", (e) => {
+  
+// })
 
 
 // search button key handler event listener and function
@@ -382,7 +392,6 @@ function openFavoriteModal(cardId) {
 
 
   document.getElementById("cross-det").addEventListener('click',()=>{
-      console.log("hey you click on the cross")
       favModal.style.display = 'none';
   })
 }
@@ -391,6 +400,7 @@ function openFavoriteModal(cardId) {
 //function to add fav item  to the local storage
 function addToFavorites(cardId){
    const selectedFoodItem = temp.find(item => item.idMeal === cardId);
+   
   if (!fav.some(item => item.idMeal === cardId) ) {
       fav.push(selectedFoodItem);
       localStorage.setItem('favorites', JSON.stringify(fav));
